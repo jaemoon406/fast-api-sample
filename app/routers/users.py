@@ -29,7 +29,6 @@ async def get_users():
     ]
 
 
-# @router.get('/me')
 @router.get("/{user_id}")
 async def get_my_data(user_id):
     engine = create_engine(
